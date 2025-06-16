@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Para mi Apa - León de Judá</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lion_waiting_in_Namibia.jpg/1600px-Lion_waiting_in_Namibia.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      backdrop-filter: brightness(0.4);
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 15px;
+      max-width: 700px;
+      margin: 20px;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 12px 25px;
+      font-size: 16px;
+      background-color: #ff9800;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #e68900;
+    }
+
+    #mensaje {
+      display: none;
+      margin-top: 30px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>¡Feliz día, Apa! 🦁</h1>
+    <p>Este pequeño regalo es solo una muestra del amor y admiración que siento por ti.</p>
+    <p>Haz clic en el botón para ver algo especial...</p>
+
+    <button onclick="mostrarMensaje()">Ver mensaje</button>
+
+    <div id="mensaje">
+      <p>Gracias por enseñarme los pitillitos, por tu paciencia, por tu alegría y por todo lo que haces sin esperar nada a cambio.</p>
+      <p>Eres fuerte como un león, valiente como un guerrero y sabio como un rey. 🦁</p>
+      <p>Dios tiene grandes planes para tu vida. No importa las circunstancias, Él sigue escribiendo una historia poderosa contigo. 🙌</p>
+      <p>Te amo mucho, Apa. Gracias por ser mi ejemplo. ❤️</p>
+    </div>
+  </div>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById("mensaje").style.display = "block";
+    }
+  </script>
+</body>
+</html>
